@@ -1,0 +1,51 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+ul {
+  list-style: none;
+  column-count: 2;
+  column-gap: 5px;
+}
+
+.btn-voltar-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-voltar-div a {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+  padding: 0 10px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.playlist-link {
+  display: flex;
+  color: #009ba0;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
