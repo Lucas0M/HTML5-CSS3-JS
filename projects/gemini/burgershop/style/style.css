@@ -32,8 +32,8 @@ main {
   background-color: lightblue;
   max-width: 80vw;
   margin: auto;
-  height: 74.7vh;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 main > #form > form {
@@ -59,4 +59,25 @@ footer {
 
 footer > p {
   color: #fff;
+}
+
+label {
+  display: block; /* Força o label a ocupar a linha toda, jogando o input para baixo */
+  font-weight: bold;
+  margin-bottom: 5px; /* Dá um respiro entre o texto e a caixinha */
+}
+
+input {
+  padding: 10px; /* Deixa a caixinha mais "gorda" e confortável */
+  margin-top: 5px; /* Desgruda a caixinha da palavra de cima */
+  border-radius: 5px; /* Arredonda as pontas para ficar moderno */
+  border: 1px solid #ccc;
+  width: 90%; /* Faz a caixa ocupar quase toda a largura disponível */
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  width: 84%; /* Faz a caixa ocupar quase todo o espaço disponível */
+  padding: 10px; /* Deixa a caixa mais "gordinha" e confortável para clicar */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Arredonda as pontas */
 }
