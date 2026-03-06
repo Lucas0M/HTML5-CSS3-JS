@@ -1,1 +1,4 @@
-Os dadaos foram criados!
+<?php 
+  echo "Hello World"
+
+?>
