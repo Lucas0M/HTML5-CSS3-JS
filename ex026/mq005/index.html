@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Menu Responsive</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
+    <menu id="items">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Footer</a></li>
+      </ul>
+    </menu>
+  </header>
+
+  <main>
+    <article>
+      <h2>Testando Media Queries</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique alias quos, tenetur libero doloremque vel explicabo, perspiciatis quae ea error cupiditate repellendus, rem at animi laborum adipisci nostrum eum molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus beatae sit quam possimus, error harum obcaecati repellat distinctio autem illo ipsum nostrum omnis totam aspernatur provident iure, accusantium reprehenderit. Et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aut iure facilis sit nulla iste aliquid in at consectetur odio rem ut quaerat perspiciatis fugit maxime est, quas sint temporibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorum qui beatae, debitis quisquam cumque expedita, maxime ipsa error facilis consectetur praesentium obcaecati itaque, deleniti libero molestiae adipisci ipsum? Error!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, a perspiciatis dolores nisi fugit facilis voluptatem recusandae quo culpa omnis, pariatur, fuga odio expedita! Ea distinctio voluptates corporis officia eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, perspiciatis autem. Minus, officiis commodi ducimus quas assumenda et optio omnis aut corrupti maiores totam earum porro, deleniti nobis libero natus!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, sunt odit? Commodi, vero aut totam soluta repellat quos debitis architecto numquam blanditiis voluptatibus impedit neque minima doloremque cumque veniam molestias.</p>
+    </article>
+  </main>
+
+  <script>
+    function clickMenu(){
+      if (items.style.display == 'block') {
+        items.style.display = 'none'
+      } else {
+        items.style.display = 'block'
+      }
+    }
+  </script>
+
+</body>
+</html>
