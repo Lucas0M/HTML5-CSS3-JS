@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    body {
+      background-color: bisque;
+      max-width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: aquamarine;
+    }
+
+    .container {
+      background-color: blue;
+    }
+
+    .conteudo {
+      background-color: brown;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    header h1 {
+      color: #fff;
+      font-size: 1.3em;
+    }
+
+    header p {
+      text-align: justify;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      font-size: 0.9em;
+      text-indent: 30px;
+      max-width: 800px;
+    }
+
+    menu {
+      background-color: white;
+    }
+    
+    .menu-div {
+      background-color: blueviolet;
+    }
+
+    menu ul {
+      display: flex;
+      flex-flow: column nowrap;
+      /* justify-content: center;
+      align-items: center; */
+      text-align: center;
+    }
+    
+    menu ul li {
+      list-style-type: none;
+    }
+
+    menu ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 15px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.521);
+      border-radius: 0 0 10px 10px;
+      /* background-color: transparent; */
+      overflow: hidden;
+    }
+
+    .main-container {
+      background-color: cadetblue;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .main-container p {
+      padding-top: 5px;
+    }
+
+    .main-container h2 {
+      padding: 5px 0;
+      color: aqua;
+      font-size: 1.1em;
+    }
+
+    footer {
+      background-color: yellowgreen;
+      padding: 5px;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    footer p {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    @media screen and (min-width: 768px) {
+      menu ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row nowrap;
+        border-radius: 5px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      menu ul {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="conteudo">
+        <h1>Conteudo do Site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempore voluptas modi reprehenderit obcaecati incidunt iste saepe quibusdam voluptatibus, eius animi nihil, alias consequatur, quaerat minus suscipit commodi! Enim, velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis distinctio possimus omnis a ea nam non adipisci ipsa quas voluptate! Assumenda neque dolorem magnam cum a placeat, deleniti nam alias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae tempore a atque ab quis ipsum ipsa doloribus eum autem, consequuntur deserunt fugiat nostrum quibusdam impedit quo delectus, laudantium esse nemo!</p>
+      </div>
+      <menu>
+        <div class="menu-div">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Perguntas</a></li>
+            <li><a href="#">Paginas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </menu>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <h2>Container Principal</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, dignissimos. Voluptatum fuga, beatae quis itaque quae adipisci corrupti. Dolore ipsa voluptatem asperiores architecto et. Quasi, facere? Voluptate fuga incidunt est. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo maxime facilis earum iure sunt, eveniet repellendus optio aliquam eaque quae, alias porro magnam esse ipsa obcaecati in quaerat soluta iusto.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit velit laborum delectus neque, veritatis minus unde eos explicabo nulla repellat consequuntur earum maxime similique pariatur soluta at, quae nisi saepe.</p>
+
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste. Rem quae asperiores odit voluptatum! Natus facere, dicta hic, fuga reprehenderit architecto magni eveniet, incidunt numquam doloremque culpa est quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id dicta iure deserunt dolorem hic ad, cupiditate, quia libero error at soluta maiores reprehenderit ipsa ratione incidunt vel maxime voluptatem.</p>
+
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste. Rem quae asperiores odit voluptatum! Natus facere, dicta hic, fuga reprehenderit architecto magni eveniet, incidunt numquam doloremque culpa est quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id dicta iure deserunt dolorem hic ad, cupiditate, quia libero error at soluta maiores reprehenderit ipsa ratione incidunt vel maxime voluptatem.</p>
+
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste. Rem quae asperiores odit voluptatum! Natus facere, dicta hic, fuga reprehenderit architecto magni eveniet, incidunt numquam doloremque culpa est quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id dicta iure deserunt dolorem hic ad, cupiditate, quia libero error at soluta maiores reprehenderit ipsa ratione incidunt vel maxime voluptatem.</p>
+
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, iste. Rem quae asperiores odit voluptatum! Natus facere, dicta hic, fuga reprehenderit architecto magni eveniet, incidunt numquam doloremque culpa est quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id dicta iure deserunt dolorem hic ad, cupiditate, quia libero error at soluta maiores reprehenderit ipsa ratione incidunt vel maxime voluptatem.</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Gostei muito de fazer esse site pessoal eba!</p>
+  </footer>
+</body>
+</html>
