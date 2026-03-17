@@ -8,14 +8,17 @@
     .container {
       display: grid;
       border: 10px solid yellow;
-      grid-template-columns:  repeat(3, auto);
-      grid-template-rows: repeat(3, auto);
-      align-items: center;
-      justify-items: stretch;
-      width: 650px;
-      height: 450px;
-      justify-content: start;
-      align-content: stretch;
+      height: 250px;
+      /* grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(3, auto); */
+      grid-template: repeat(3, auto) / repeat(3, auto);
+      gap: 10px;
+      /* align-items: start;
+      justify-items: center; */
+      place-items: start center;
+      /* align-content: space-between;
+      justify-content: end; */
+      place-content: space-between end;
     }
 
     .item {
