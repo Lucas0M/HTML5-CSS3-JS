@@ -8,14 +8,20 @@
     .container {
       display: grid;
       border: 10px solid yellow;
-      grid-template-columns:  repeat(3, auto);
-      grid-template-rows: repeat(3, auto);
-      align-items: normal;
-      justify-items: normal;
-      justify-content: normal;
-      align-content: normal;
+      /* grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(3, auto); */
+      grid-template-rows: repeat(3, 50px);
+      grid-template-columns: 100px 20% repeat(2, 1fr);
+      grid-auto-flow: row;
+      grid-auto-rows: 50px;
+      grid-auto-columns: 120px;
       gap: 10px;
-      height: 250px;
+      /* align-items: start;
+      justify-items: center; */
+      place-items: normal normal;
+      /* align-content: space-between;
+      justify-content: end; */
+      place-content: normal normal;
     }
 
     .item {
@@ -35,6 +41,7 @@
     <div class="item">G</div>
     <div class="item">H</div>
     <div class="item">I</div>
+    <div class="item">J</div>
   </div>
 </body>
 </html>
