@@ -7,11 +7,36 @@
   <title>Verificador de Idade</title>
 </head>
 <body>
-  <h1 id="title"></h1>
-  <div class="container">
-    <h3 id="horas">...</h3>
-    <img src="" id="foto" alt="">
-  </div>
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+  <section>
+    <div class="container">
+      <p>Ano de Nascimento:
+        <input type="number" name="txtano" id="txtano" min="0">
+      </p>
+      <p>Sexo:
+        <input type="radio" name="radsex" id="mas" checked>
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+      </p>
+      <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+      </p>
+
+      <div class="img-div">
+      <img src="imgs/foto-homem-bebe.webp" id="foto" alt="imagem dependendo da sua idade">
+      </div>
+    </div>
+    <div id="res">
+      <p>Preencha os dados acima para ver o resultado!</p>
+    </div>
+
+  </section>
+  <footer>
+    <p>&copy; Lucas Macarini</p>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
