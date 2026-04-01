@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Loop Exercises</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #667eea;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .exercise-box {
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .exercise-box h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .exercise-box p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #5a6fd6;
+    }
+    .result {
+      margin-top: 15px;
+      padding: 15px;
+      background: #e8f5e9;
+      border-radius: 5px;
+      font-family: 'Courier New', monospace;
+      white-space: pre-wrap;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .code-area {
+      width: 100%;
+      min-height: 100px;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      margin-top: 10px;
+      resize: vertical;
+    }
+    .code-area:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    .hint {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #856404;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Loop Exercises</h1>
+    <p class="subtitle">Practice JavaScript loops (for, while, do...while)</p>
+
+    <!-- Exercise 1 -->
+    <div class="exercise-box">
+      <h3>Exercise 1: Count 1 to 10</h3>
+      <p>Print numbers from 1 to 10 using a <code>for</code> loop.</p>
+      <button onclick="runExercise1()">Run Code</button>
+      <textarea class="code-area" id="code1">// Write your code here
+</textarea>
+      <div class="result" id="result1">Result will appear here...</div>
+      <div class="hint">💡 Hint: Use <code>for (let i = 1; i <= 10; i++)</code></div>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div class="exercise-box">
+      <h3>Exercise 2: Countdown</h3>
+      <p>Print numbers from 20 down to 1.</p>
+      <button onclick="runExercise2()">Run Code</button>
+      <textarea class="code-area" id="code2">// Write your code here
+</textarea>
+      <div class="result" id="result2">Result will appear here...</div>
+      <div class="hint">💡 Hint: Start at 20 and decrement: <code>i--</code></div>
+    </div>
+
+    <!-- Exercise 3 -->
+    <div class="exercise-box">
+      <h3>Exercise 3: Sum of Numbers</h3>
+      <p>Calculate the sum of all numbers from 1 to 100.</p>
+      <button onclick="runExercise3()">Run Code</button>
+      <textarea class="code-area" id="code3">// Write your code here
+</textarea>
+      <div class="result" id="result3">Result will appear here...</div>
+      <div class="hint">💡 Hint: Create a variable <code>let sum = 0</code> and add each number</div>
+    </div>
+
+    <!-- Exercise 4 -->
+    <div class="exercise-box">
+      <h3>Exercise 4: Even Numbers</h3>
+      <p>Print only even numbers from 1 to 50.</p>
+      <button onclick="runExercise4()">Run Code</button>
+      <textarea class="code-area" id="code4">// Write your code here
+</textarea>
+      <div class="result" id="result4">Result will appear here...</div>
+      <div class="hint">💡 Hint: Use <code>if (i % 2 === 0)</code> to check if even</div>
+    </div>
+
+    <!-- Exercise 5 -->
+    <div class="exercise-box">
+      <h3>Exercise 5: Multiplication Table</h3>
+      <p>Print the multiplication table from 1 to 10.</p>
+      <button onclick="runExercise5()">Run Code</button>
+      <textarea class="code-area" id="code5">// Write your code here
+</textarea>
+      <div class="result" id="result5">Result will appear here...</div>
+      <div class="hint">💡 Hint: Use nested loops - one for each multiplier</div>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div class="exercise-box">
+      <h3>Exercise 6: Password Check</h3>
+      <p>Use <code>do...while</code> to keep asking for password until user types "1234".</p>
+      <button onclick="runExercise6()">Run Code</button>
+      <textarea class="code-area" id="code6">// Write your code here
+</textarea>
+      <div class="result" id="result6">Result will appear here...</div>
+      <div class="hint">💡 Hint: Use <code>prompt()</code> inside a <code>do...while</code> loop</div>
+    </div>
+  </div>
+
+  <script>
+    // Exercise 1: Count 1 to 10
+    function runExercise1() {
+      let output = "";
+      try {
+        eval(document.getElementById('code1').value);
+        document.getElementById('result1').textContent = output || "No output - make sure to add to 'output' variable";
+      } catch (e) {
+        document.getElementById('result1').textContent = "❌ Error: " + e.message;
+      }
+    }
+
+    // Exercise 2: Countdown
+    function runExercise2() {
+      let output = "";
+      try {
+        eval(document.getElementById('code2').value);
+        document.getElementById('result2').textContent = output || "No output";
+      } catch (e) {
+        document.getElementById('result2').textContent = "❌ Error: " + e.message;
+      }
+    }
+
+    // Exercise 3: Sum
+    function runExercise3() {
+      let output = "";
+      try {
+        eval(document.getElementById('code3').value);
+        document.getElementById('result3').textContent = output || "No output";
+      } catch (e) {
+        document.getElementById('result3').textContent = "❌ Error: " + e.message;
+      }
+    }
+
+    // Exercise 4: Even numbers
+    function runExercise4() {
+      let output = "";
+      try {
+        eval(document.getElementById('code4').value);
+        document.getElementById('result4').textContent = output || "No output";
+      } catch (e) {
+        document.getElementById('result4').textContent = "❌ Error: " + e.message;
+      }
+    }
+
+    // Exercise 5: Multiplication table
+    function runExercise5() {
+      let output = "";
+      try {
+        eval(document.getElementById('code5').value);
+        document.getElementById('result5').textContent = output || "No output";
+      } catch (e) {
+        document.getElementById('result5').textContent = "❌ Error: " + e.message;
+      }
+    }
+
+    // Exercise 6: Password
+    function runExercise6() {
+      let output = "";
+      try {
+        eval(document.getElementById('code6').value);
+        document.getElementById('result6').textContent = output || "No output";
+      } catch (e) {
+        document.getElementById('result6').textContent = "❌ Error: " + e.message;
+      }
+    }
+  </script>
+</body>
+</html>
