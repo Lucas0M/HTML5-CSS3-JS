@@ -42,8 +42,12 @@ h1 {
 
 #res {
   text-align: center;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
   font-size: 1.5em;
   color: #4d4d4d;
+  gap: 20px;
 }
 
 footer {
